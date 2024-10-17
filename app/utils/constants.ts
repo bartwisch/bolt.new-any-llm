@@ -2,10 +2,12 @@ export const WORK_DIR_NAME = 'project';
 export const WORK_DIR = `/home/${WORK_DIR_NAME}`;
 export const MODIFICATIONS_TAG_NAME = 'bolt_file_modifications';
 export const MODEL_REGEX = /^\[Model: (.*?)\]\n\n/;
-export const DEFAULT_MODEL = "llama3.2" //"claude-3-5-sonnet-20240620";
+export const DEFAULT_MODEL = "qwen2.5-coder" //"claude-3-5-sonnet-20240620";
 export const DEFAULT_PROVIDER = "Anthropic";
 export const MODEL_LIST = [
     { name: 'claude-3-5-sonnet-20240620', label: 'Claude 3.5 Sonnet', provider: 'Anthropic' },
+    { name: 'llama3.2', label: 'llama3.2 (local model)', provider: 'Ollama' },
+    { name: 'qwen2.5-coder', label: 'qwen2.5-coder(local model)', provider: 'Ollama' },
     { name: 'gpt-4o', label: 'GPT-4o', provider: 'OpenAI' },
     { name: 'qwen2.5-coder:7b', label: 'Qwen 2.5 Coder 7b', provider: 'Ollama' },
     { name: 'qwen2.5-coder:1.5b', label: 'Qwen 2.5 Coder 1.5b', provider: 'Ollama' },
@@ -17,7 +19,6 @@ export const MODEL_LIST = [
     { name: 'codellama:34b', label: 'Code Llama 34b', provider: 'Ollama' },
     { name: 'codellama:13b', label: 'Code Llama 13b', provider: 'Ollama' },
     { name: 'codellama:7b', label: 'Code Llama 7b', provider: 'Ollama' },
-    { name: 'llama3.2', label: 'llama3.2 (local model)', provider: 'Ollama' },
     { name: 'deepseek/deepseek-coder', label: 'Deepseek-Coder V2 236B (OpenRouter)', provider: 'OpenRouter' },
     { name: 'google/gemini-flash-1.5', label: 'Google Gemini Flash 1.5 (OpenRouter)', provider: 'OpenRouter' },
     { name: 'google/gemini-pro-1.5', label: 'Google Gemini Pro 1.5 (OpenRouter)', provider: 'OpenRouter' },
